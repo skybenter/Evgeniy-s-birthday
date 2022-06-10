@@ -1,0 +1,682 @@
+@charset "UTF-8";
+/* line 1, ../../../../Documents/dad/#source/scss/style.scss */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+/* line 2, ../../../../Documents/dad/#source/scss/style.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 3, ../../../../Documents/dad/#source/scss/style.scss */
+:focus, :active {
+  outline: none; }
+
+/* line 4, ../../../../Documents/dad/#source/scss/style.scss */
+a:focus, a:active {
+  outline: none; }
+
+/* line 5, ../../../../Documents/dad/#source/scss/style.scss */
+nav, footer, header, aside {
+  display: block; }
+
+/* line 6, ../../../../Documents/dad/#source/scss/style.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+/* line 7, ../../../../Documents/dad/#source/scss/style.scss */
+input, button, textarea {
+  font-family: inherit; }
+
+/* line 8, ../../../../Documents/dad/#source/scss/style.scss */
+input::-ms-clear {
+  display: none; }
+
+/* line 9, ../../../../Documents/dad/#source/scss/style.scss */
+button {
+  cursor: pointer; }
+
+/* line 10, ../../../../Documents/dad/#source/scss/style.scss */
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+/* line 11, ../../../../Documents/dad/#source/scss/style.scss */
+a, a:visited {
+  text-decoration: none; }
+
+/* line 12, ../../../../Documents/dad/#source/scss/style.scss */
+a:hover {
+  text-decoration: none; }
+
+/* line 13, ../../../../Documents/dad/#source/scss/style.scss */
+ul li {
+  list-style: none; }
+
+/* line 14, ../../../../Documents/dad/#source/scss/style.scss */
+img {
+  vertical-align: top; }
+
+/* line 15, ../../../../Documents/dad/#source/scss/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+/* line 17, ../../../../Documents/dad/#source/scss/style.scss */
+body {
+  background: -webkit-gradient(linear, left top, right bottom, from(blue), to(pink));
+  background: linear-gradient(to bottom right, blue, pink); }
+
+/* line 20, ../../../../Documents/dad/#source/scss/style.scss */
+[class*="__container"] {
+  max-width: 1350px;
+  margin: 0px auto;
+  padding: 0px 15px; }
+  @media (max-width: 1287px) {
+    /* line 20, ../../../../Documents/dad/#source/scss/style.scss */
+    [class*="__container"] {
+      /*PC*/ }
+      /* line 26, ../../../../Documents/dad/#source/scss/style.scss */
+      [class*="__container"] [class*="__container"] {
+        max-width: 970px; } }
+  @media (max-width: 991.98px) {
+    /* line 20, ../../../../Documents/dad/#source/scss/style.scss */
+    [class*="__container"] {
+      /*Tablet*/ }
+      /* line 31, ../../../../Documents/dad/#source/scss/style.scss */
+      [class*="__container"] [class*="__container"] {
+        max-width: 750px; } }
+  @media (max-width: 767.98px) {
+    /* line 20, ../../../../Documents/dad/#source/scss/style.scss */
+    [class*="__container"] {
+      /*Mobile*/ }
+      /* line 35, ../../../../Documents/dad/#source/scss/style.scss */
+      [class*="__container"] [class*="__container"] {
+        max-width: none; } }
+
+/* line 41, ../../../../Documents/dad/#source/scss/style.scss */
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  min-height: 100%; }
+
+/* line 52, ../../../../Documents/dad/#source/scss/style.scss */
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0px 100px 0px; }
+  @media (max-width: 621px) {
+    /* line 52, ../../../../Documents/dad/#source/scss/style.scss */
+    .header__container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+/* line 62, ../../../../Documents/dad/#source/scss/style.scss */
+.header__logo {
+  position: relative;
+  z-index: 5; }
+
+@media (max-width: 630px) {
+  /* line 67, ../../../../Documents/dad/#source/scss/style.scss */
+  .header__logo img {
+    width: 140px; } }
+
+@media (max-width: 590px) {
+  /* line 67, ../../../../Documents/dad/#source/scss/style.scss */
+  .header__logo img {
+    width: 120px; } }
+
+@media (max-width: 621px) {
+  /* line 67, ../../../../Documents/dad/#source/scss/style.scss */
+  .header__logo img {
+    width: 100%;
+    margin: 0px 0px 10px 0px; } }
+
+/* line 83, ../../../../Documents/dad/#source/scss/style.scss */
+.header__menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
+
+/* line 86, ../../../../Documents/dad/#source/scss/style.scss */
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+/* line 90, ../../../../Documents/dad/#source/scss/style.scss */
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+@media (max-width: 621px) {
+  /* line 95, ../../../../Documents/dad/#source/scss/style.scss */
+  .menu__item {
+    margin: 10px 0px 10px 0px; } }
+
+/* line 101, ../../../../Documents/dad/#source/scss/style.scss */
+.menu__link {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  font-family: 'Prata', serif;
+  letter-spacing: 5px;
+  color: #040450;
+  text-shadow: #FC0 1px 0 10px; }
+  @media (max-width: 681px) {
+    /* line 101, ../../../../Documents/dad/#source/scss/style.scss */
+    .menu__link {
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 3.5px; } }
+  /* line 115, ../../../../Documents/dad/#source/scss/style.scss */
+  .menu__link:hover {
+    color: yellow;
+    text-shadow: black 1px 0 5px;
+    -webkit-transition: color 0.5s ease 0s;
+    transition: color 0.5s ease 0s; }
+    /* line 120, ../../../../Documents/dad/#source/scss/style.scss */
+    .menu__link:hover.menu__link span {
+      background: url(../img/шарики.svg) 0 0 no-repeat;
+      display: inline-block;
+      padding: 10px 10px  10px 35px; }
+
+/* line 131, ../../../../Documents/dad/#source/scss/style.scss */
+.header__button {
+  background-color: #4b12e7;
+  padding: 15px 25px;
+  border-radius: 9px; }
+  @media (max-width: 621px) {
+    /* line 131, ../../../../Documents/dad/#source/scss/style.scss */
+    .header__button {
+      margin: 10px 0px 10px 0px; } }
+  /* line 139, ../../../../Documents/dad/#source/scss/style.scss */
+  .header__button:hover {
+    background-color: #4619c0; }
+  @media (max-width: 645px) {
+    /* line 131, ../../../../Documents/dad/#source/scss/style.scss */
+    .header__button {
+      padding: 10px 20px; } }
+  @media (max-width: 621px) {
+    /* line 131, ../../../../Documents/dad/#source/scss/style.scss */
+    .header__button {
+      padding: 15px 22px; } }
+
+/* line 150, ../../../../Documents/dad/#source/scss/style.scss */
+.button {
+  display: inline-block;
+  color: #ffd900;
+  font-family: 'Prata', serif;
+  font-weight: 400; }
+  /* line 156, ../../../../Documents/dad/#source/scss/style.scss */
+  .button:hover {
+    color: red; }
+
+/* line 162, ../../../../Documents/dad/#source/scss/style.scss */
+.centr {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 10px 0px 10px 0px; }
+
+/* line 168, ../../../../Documents/dad/#source/scss/style.scss */
+.title-music {
+  text-align: center;
+  display: inline-block;
+  font-weight: 700;
+  font-family: 'Prata', serif;
+  font-size: 20px;
+  line-height: 24px;
+  text-shadow: 0px 1px 0px black;
+  text-transform: uppercase;
+  background: #2E2F45;
+  display: table;
+  margin: 20px auto;
+  color: white;
+  border-radius: 5px;
+  mix-blend-mode: multiply;
+  padding: 5px 10px; }
+
+/* line 186, ../../../../Documents/dad/#source/scss/style.scss */
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
+
+@media (max-width: 368px) {
+  /* line 194, ../../../../Documents/dad/#source/scss/style.scss */
+  .congratulations__container {
+    padding: 0px 0px 0px 0px; } }
+
+/* line 200, ../../../../Documents/dad/#source/scss/style.scss */
+.congratulations__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media (max-width: 1024px) {
+    /* line 200, ../../../../Documents/dad/#source/scss/style.scss */
+    .congratulations__columns {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+
+/* line 211, ../../../../Documents/dad/#source/scss/style.scss */
+.congratulations__column {
+  -webkit-box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.08);
+          box-shadow: 0px 0px 8px rgba(22, 23, 72, 0.07), 0px 25px 35px rgba(22, 23, 72, 0.08);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33%;
+          flex: 0 1 33%;
+  background-color: #faf49e;
+  margin: 0px 20px 0px 20px; }
+  @media (max-width: 1024px) {
+    /* line 211, ../../../../Documents/dad/#source/scss/style.scss */
+    .congratulations__column {
+      margin: 0px 0px 50px 0px; } }
+  @media (max-width: 752px) {
+    /* line 211, ../../../../Documents/dad/#source/scss/style.scss */
+    .congratulations__column {
+      width: 100%;
+      margin: 30px 0px 0px 0px; } }
+
+/* line 224, ../../../../Documents/dad/#source/scss/style.scss */
+.congratulations__item {
+  height: 100%; }
+
+/* line 227, ../../../../Documents/dad/#source/scss/style.scss */
+.congratulations__title {
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Prata', serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #3142d4;
+  text-shadow: 0px 1px 0px black; }
+  /* line 229, ../../../../Documents/dad/#source/scss/style.scss */
+  .congratulations__title:not(:last-child) {
+    margin: 10px 0px 10px 0px; }
+
+/* line 240, ../../../../Documents/dad/#source/scss/style.scss */
+.congratulations__text {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #07064d;
+  text-shadow: 0px 0px 1px red; }
+
+/* line 249, ../../../../Documents/dad/#source/scss/style.scss */
+.congratulations__image {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center; }
+  /* line 253, ../../../../Documents/dad/#source/scss/style.scss */
+  .congratulations__image img {
+    width: 200px;
+    max-height: 210px; }
+
+/* line 259, ../../../../Documents/dad/#source/scss/style.scss */
+.congratulations__line {
+  text-align: center; }
+  /* line 262, ../../../../Documents/dad/#source/scss/style.scss */
+  .congratulations__line img {
+    width: 300px; }
+    @media (max-width: 342px) {
+      /* line 262, ../../../../Documents/dad/#source/scss/style.scss */
+      .congratulations__line img {
+        width: 280px; } }
+    @media (max-width: 320px) {
+      /* line 262, ../../../../Documents/dad/#source/scss/style.scss */
+      .congratulations__line img {
+        width: 260px; } }
+
+/* line 283, ../../../../Documents/dad/#source/scss/style.scss */
+.gallery__container {
+  padding: 100px 15px 0px 15px; }
+  @media (max-width: 385px) {
+    /* line 283, ../../../../Documents/dad/#source/scss/style.scss */
+    .gallery__container {
+      padding: 100px 0px 0px 0px; } }
+
+/* line 291, ../../../../Documents/dad/#source/scss/style.scss */
+.gallery__title {
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Prata', serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #3142d4;
+  text-shadow: 0px 1px 0px black; }
+  /* line 293, ../../../../Documents/dad/#source/scss/style.scss */
+  .gallery__title:not(:last-child) {
+    margin: 10px 0px 10px 0px; }
+
+/* line 308, ../../../../Documents/dad/#source/scss/style.scss */
+.gallery__image__four {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+
+/* line 330, ../../../../Documents/dad/#source/scss/style.scss */
+.gallery__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  left: 0;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover; }
+  /* line 337, ../../../../Documents/dad/#source/scss/style.scss */
+  .gallery__image img {
+    width: 150px; }
+    @media (max-width: 385px) {
+      /* line 337, ../../../../Documents/dad/#source/scss/style.scss */
+      .gallery__image img {
+        max-width: 100px; } }
+
+/* line 348, ../../../../Documents/dad/#source/scss/style.scss */
+.gallery__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 2.5px 0px 2.5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+  /* line 354, ../../../../Documents/dad/#source/scss/style.scss */
+  .gallery__arrow img {
+    width: 50px; }
+
+/* line 359, ../../../../Documents/dad/#source/scss/style.scss */
+.gallery__line-first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 3px solid #f0000f;
+  margin: 0px 0px 20px 0px;
+  max-width: 360px; }
+  @media (min-width: 618px) {
+    /* line 359, ../../../../Documents/dad/#source/scss/style.scss */
+    .gallery__line-first {
+      margin: 10px  auto;
+      position: relative; } }
+  @media (max-width: 385px) {
+    /* line 359, ../../../../Documents/dad/#source/scss/style.scss */
+    .gallery__line-first {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+/* line 372, ../../../../Documents/dad/#source/scss/style.scss */
+.gallery__line-second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 3px solid #f0000f;
+  margin: 0px 0px 20px 0px;
+  max-width: 360px; }
+  @media (min-width: 618px) {
+    /* line 372, ../../../../Documents/dad/#source/scss/style.scss */
+    .gallery__line-second {
+      margin: 10px  auto;
+      position: relative; } }
+  @media (max-width: 385px) {
+    /* line 372, ../../../../Documents/dad/#source/scss/style.scss */
+    .gallery__line-second {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+/* line 385, ../../../../Documents/dad/#source/scss/style.scss */
+.gallery__line-third {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 3px solid #f0000f;
+  margin: 0px 0px 20px 0px;
+  max-width: 360px; }
+  @media (min-width: 618px) {
+    /* line 385, ../../../../Documents/dad/#source/scss/style.scss */
+    .gallery__line-third {
+      margin: 10px  auto;
+      position: relative; } }
+  @media (max-width: 385px) {
+    /* line 385, ../../../../Documents/dad/#source/scss/style.scss */
+    .gallery__line-third {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+/* line 398, ../../../../Documents/dad/#source/scss/style.scss */
+.gallery__line-four {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 3px solid #f0000f;
+  margin: 0px 0px 20px 0px;
+  max-width: 360px; }
+  @media (min-width: 618px) {
+    /* line 398, ../../../../Documents/dad/#source/scss/style.scss */
+    .gallery__line-four {
+      margin: 10px  auto;
+      position: relative; } }
+  @media (max-width: 385px) {
+    /* line 398, ../../../../Documents/dad/#source/scss/style.scss */
+    .gallery__line-four {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+/* line 411, ../../../../Documents/dad/#source/scss/style.scss */
+.gallery__line-five {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 3px solid #f0000f;
+  margin: 0px 0px 20px 0px;
+  max-width: 360px; }
+  @media (min-width: 618px) {
+    /* line 411, ../../../../Documents/dad/#source/scss/style.scss */
+    .gallery__line-five {
+      margin: 10px  auto;
+      position: relative; } }
+  @media (max-width: 385px) {
+    /* line 411, ../../../../Documents/dad/#source/scss/style.scss */
+    .gallery__line-five {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+/* line 424, ../../../../Documents/dad/#source/scss/style.scss */
+.gallery__line-six {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 3px solid #f0000f;
+  margin: 0px 0px 20px 0px;
+  max-width: 360px; }
+  @media (min-width: 618px) {
+    /* line 424, ../../../../Documents/dad/#source/scss/style.scss */
+    .gallery__line-six {
+      margin: 10px  auto;
+      position: relative; } }
+  @media (max-width: 385px) {
+    /* line 424, ../../../../Documents/dad/#source/scss/style.scss */
+    .gallery__line-six {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+/* line 440, ../../../../Documents/dad/#source/scss/style.scss */
+.video-relax__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/* line 445, ../../../../Documents/dad/#source/scss/style.scss */
+.video-relax__title {
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Prata', serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #3142d4;
+  text-shadow: 0px 1px 0px black; }
+  /* line 447, ../../../../Documents/dad/#source/scss/style.scss */
+  .video-relax__title:not(:last-child) {
+    margin: 10px 0px 15px 0px; }
+
+/* line 459, ../../../../Documents/dad/#source/scss/style.scss */
+.video-relax__video {
+  position: relative;
+  padding: 0px 0px 56.25% 0px;
+  margin: 0px 0px 51px 0px; }
+  /* line 463, ../../../../Documents/dad/#source/scss/style.scss */
+  .video-relax__video iframe {
+    width: 300px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+/* line 473, ../../../../Documents/dad/#source/scss/style.scss */
+.pictures__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* line 476, ../../../../Documents/dad/#source/scss/style.scss */
+.pictures__image-first {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%; }
+  /* line 478, ../../../../Documents/dad/#source/scss/style.scss */
+  .pictures__image-first img {
+    width: 100%;
+    height: 100%; }
+
+/* line 482, ../../../../Documents/dad/#source/scss/style.scss */
+.pictures__image-second {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%; }
+  /* line 484, ../../../../Documents/dad/#source/scss/style.scss */
+  .pictures__image-second img {
+    width: 100%;
+    height: 100%; }
+
+/* line 495, ../../../../Documents/dad/#source/scss/style.scss */
+canvas {
+  display: block; }
+
+/* line 498, ../../../../Documents/dad/#source/scss/style.scss */
+.buttons {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 10px 10px;
+  margin: 50px 0px 50px 0px; }
+
+/* line 506, ../../../../Documents/dad/#source/scss/style.scss */
+.btn {
+  font-size: 30px;
+  margin: 1rem;
+  color: #2f00ff;
+  background-color: #2bff00;
+  padding: 30px 60px;
+  border: 10px solid transparent;
+  -o-border-image: linear-gradient(to right, #0B0E7F, #0B95DD);
+     border-image: -webkit-gradient(linear, left top, right top, from(#0B0E7F), to(#0B95DD));
+     border-image: linear-gradient(to right, #0B0E7F, #0B95DD);
+  -webkit-border-image: -webkit-linear-gradient(#0B0E7F, #0B95DD);
+  border-image-slice: 1; }
+  /* line 518, ../../../../Documents/dad/#source/scss/style.scss */
+  .btn:hover {
+    border: 10px solid transparent;
+    -o-border-image: linear-gradient(20deg, #0E9ADF 40%, #0625F9);
+       border-image: linear-gradient(20deg, #0E9ADF 40%, #0625F9);
+    border-image-slice: 1; }
+  /* line 525, ../../../../Documents/dad/#source/scss/style.scss */
+  .btn-jittery {
+    -webkit-animation: jittery 4s infinite;
+            animation: jittery 4s infinite; }
+
+@-webkit-keyframes jittery {
+  5%,
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  10% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9); }
+  15% {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15); }
+  20% {
+    -webkit-transform: scale(1.15) rotate(-5deg);
+            transform: scale(1.15) rotate(-5deg); }
+  25% {
+    -webkit-transform: scale(1.15) rotate(5deg);
+            transform: scale(1.15) rotate(5deg); }
+  30% {
+    -webkit-transform: scale(1.15) rotate(-3deg);
+            transform: scale(1.15) rotate(-3deg); }
